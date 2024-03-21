@@ -1,0 +1,147 @@
+/* Estilos da Barra de Navegação */
+.navbar.navbar-expand-lg {
+  background: #040714 !important;
+  margin-top: 0; 
+  padding-top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Termina aqui*/
+
+#logo{
+    margin: auto;
+    display: block;
+    margin-top: -70px;
+    margin-left: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+h1{
+    color: #f9f9f9;
+    text-align: center;
+    font-family: serif;
+    font-weight: 500px;
+}
+
+p{
+  color: #c0c0c0; 
+  text-align: center;
+  font-family: serif;
+  font-size: 25px;
+} 
+
+#titulo{
+  font-size: 30px;
+}
+
+#titulo2{
+  font-size: 40px;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 28px;
+  font-family: serif;
+}
+
+body {
+  background-color: #040714;
+  font-family: Arial, sans-serif;
+  color: #dbdee0;
+  margin: 0;
+  padding: 0;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent; /* Inicialmente, a borda é transparente */
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+  border: 2px solid #6421ff; /* Quando o mouse passa por cima, a borda fica roxa */
+}
+
+
+.movie-list{
+  margin: 0 auto;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+}
+
+.search-button {
+  position: absolute;
+  right: 35px;
+  top: 37px;
+  display: flex;
+  align-items: center;
+}
+
+.search-button input[type="text"] {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.search-button button {
+  background-color: #6421ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-button button i {
+  font-size: 20px;
+}
+
+/* Estilos responsivos */
+/* Estilos para as colunas de filmes */
+.movie-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.pesquisar {
+  color: #fff; /* Cor do texto (branco) */
+  font-weight: bold; /* Texto em negrito */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  text-decoration: none; /* Remove o sublinhado do link */
+  transition: color 0.3s; /* Efeito de transição de cor */
+  position: absolute; /* Define a posição como absoluta */
+  top: 63px; /* Move o elemento 50% para baixo da parte superior */
+  left: 800px; /* Move o elemento 50% para a direita do lado esquerdo */
+  transform: translate(-50%, -50%); /* Centraliza o elemento na horizontal e vertical */
+}
+
+/* Estilos para o link "Assistir agora" quando passa o mouse */
+.pesquisar:hover {
+  color: #6421ff; /* Cor do texto (roxa) quando passa o mouse */
+}
